@@ -34,6 +34,7 @@ const EmployeeDashboard: React.FC = () => {
       });
       setProfile(response.data);
       setFormData(response.data);
+      console.log(response.data)
       setLoading(false);
     } catch (error) {
       setError(`Error updating profile ${error}`);
